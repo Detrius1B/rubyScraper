@@ -9,6 +9,10 @@ class Accounts
     @transactions = transactions
   end
 
+  # def add_transactions(transaction)
+  #   @transactions << transaction
+  # end
+
   def puts_details
     account = {
       accounts: [
