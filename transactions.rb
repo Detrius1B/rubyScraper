@@ -9,7 +9,7 @@ class Transactions
     @account_name = account_name
   end
 
-  def puts_details
+  def puts_tr_details
     transaction = {
       transactions: [
         { date: @date,

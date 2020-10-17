@@ -20,9 +20,15 @@ class Accounts
           currency: @currency,
           balance: @balance,
           nature: @nature,
-          transactions: @transactions }
+          transactions: puts_details_trans(@transactions) }
       ]
     }
     puts JSON.pretty_generate(account)
+  end
+
+  def puts_details_trans(transactions)
+    transactions.each do |tran|
+      puts tran.puts_tr_details
+    end
   end
 end
